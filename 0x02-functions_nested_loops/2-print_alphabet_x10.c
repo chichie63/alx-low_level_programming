@@ -2,7 +2,9 @@
 
 /**
  * print_alphabet - function prints alphabet 10 times
- * Return: 0
+ *
+ * Description: using _putchar to print
+ *
  */
 
 void print_alphabet_x10(void)
