@@ -5,18 +5,19 @@
  * @dest: destination string pointer
  * @src: source string pointer
  * @n: number of element to concertenate from src
- * Return: dest + n of src
+ * Return: dest
  */
 
-char *_strcat(char *dest, char *src, int n)
+char *_strncat(char *dest, char *src, int n)
 {
-	int len_dest, i;
+	int len = strlen(dest);
+	int i;
+	
+	for (i = 0; i < n && *src != '\0'; i++)
 
-	for (len_dest = 0; dest[len_dest] != '\0'; len_dest++)
+		dest[len + i] = *src;
+	src++;
 
-	for (i = 0; src[i] != 0 && i < n; i++)
-
-		dest[len_dest + i] = src[i];
-
+	dest[len + i] = '\0';
 	return (dest);
 }
