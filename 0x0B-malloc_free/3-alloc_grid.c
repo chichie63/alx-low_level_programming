@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- * print_grind - returns a pointer to a 2 dimensional array of integers
+ * alloc_grind - returns a pointer to a 2 dimensional array of integers
  * @width: columns
  * @height: rows
  * Return: NULL
