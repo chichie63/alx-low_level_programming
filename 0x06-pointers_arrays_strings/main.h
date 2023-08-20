@@ -2,6 +2,7 @@
 #define MAIN_H
 #include <string.h>
 #include <stdio.h>
+#include <stdlib.h>
 
 int _putchar(char c);
 char *_strncat(char *dest, char *src, int n);
