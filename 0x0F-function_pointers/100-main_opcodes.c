@@ -8,9 +8,9 @@
  */
 int main(int argc, char *argv[])
 {
-	int b, i;
+	int bytes, index;
 	int (*address)(int, char **) = main;
-	unsigned char opcodes;
+	unsigned char opcode;
 
 	if (argc != 2)
 	{
@@ -18,19 +18,19 @@ int main(int argc, char *argv[])
 		exit(1);
 	}
 
-	b = atoi(argv[i]);
+	bytes = atoi(argv[1]);
 
-	if (b < 0)
+	if (bytes < 0)
 	{
 		printf("Error\n");
 		exit(2);
 	}
-	for (i = 0; i < b; i++)
+	for (index = 0; index < bytes; index++)
 	{
-		opcodes = *(unsigned char *)address;
-		printf("%.2x", opcodes);
+		opcode = *(unsigned char *)address;
+		printf("%.2x", opcode);
 
-		if (i == b - 1)
+		if (index == bytes - 1)
 			continue;
 		printf(" ");
 
