@@ -3,13 +3,13 @@
 #include <stdio.h>
 
 /**
- * struct lists_s - singly linked list
+ * struct list_s - singly linked list
  * @str: string - (malloc'ed string)
  * @len: string length
  * @next: points to next node
  * Description: singly linked list
  */
-typedef struct lists_s
+typedef struct list_s
 {
 	char *str;
 	unsigned int len;
